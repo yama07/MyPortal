@@ -14,73 +14,103 @@
         <TextClock
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textClock" />
+            android:format24Hour="yyyy/MM/dd"
+            android:format12Hour="yyyy/MM/dd"
+            android:id="@+id/textClock_date"
+            android:textSize="20sp" />
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="389dp">
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="bt1"
-                android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/btn2">
-            </Button>
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="bt2"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_above="@+id/btn3">
-            </Button>
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="bt3"
-                android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@+id/btn4">
-            </Button>
-            <Button
-                android:id="@+id/btn4"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:text="bt4"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/btn1">
-            </Button>
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="bt5"
-                android:layout_below="@+id/btn1"
-                android:layout_above="@+id/btn3"
-                android:layout_toRightOf="@+id/btn4"
-                android:layout_toLeftOf="@+id/btn2">
-            </Button>
-        </RelativeLayout>
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format24Hour="HH:mm:ss"
+            android:format12Hour="hh:mm:ss"
+            android:id="@+id/textClock2_time"
+            android:textSize="40sp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="3">
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
-                android:src="@mipmap/ic_launcher" />
+                android:text="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_columnSpan="2"
+                android:layout_rowSpan="2"
+                android:id="@+id/button1" />
 
-            <ImageButton
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton2"
-                android:src="@mipmap/ic_launcher" />
-        </LinearLayout>
+                android:text="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:id="@+id/button3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:id="@+id/button4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnSpan="1"
+                android:layout_row="2"
+                android:layout_rowSpan="1"
+                android:id="@+id/button5" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_column="2"
+                android:layout_columnSpan="1"
+                android:layout_row="2"
+                android:layout_rowSpan="1"
+                android:id="@+id/button6" />
+
+        </GridLayout>
+
     </LinearLayout>
 </RelativeLayout>
