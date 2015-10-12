@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MyPortal</string>
+    <string-array name="default_app">
+        <item>com.android.dialer</item>
+        <item>com.android.email</item>
+        <item>com.android.camera</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.contacts</item>
+        <item>com.android.browser</item>
+    </string-array>
+    <!--<string-array name="default_app_classname">-->
+        <!--<item>com.android.dialer.DialerApplication</item>-->
+        <!--<item>com.android.email.EmailApplication</item>-->
+        <!--<item>com.android.camera.CameraAppImpl</item>-->
+        <!--<item>com.android.deskclock.DeskClockApplication</item>-->
+        <!--<item>com.android.contacts.ContactsApplication</item>-->
+        <!--<item>com.android.browser.Browser</item>-->
+    <!--</string-array>-->
 </resources>
